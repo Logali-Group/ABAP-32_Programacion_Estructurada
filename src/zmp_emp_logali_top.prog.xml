@@ -3,19 +3,16 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>YMP_EMP_LOGALI_O01</NAME>
-    <DBAPL>S</DBAPL>
-    <DBNA>D$</DBNA>
+    <NAME>ZMP_EMP_LOGALI_TOP</NAME>
     <SUBC>I</SUBC>
-    <FIXPT>X</FIXPT>
-    <LDBNAME>D$S</LDBNAME>
+    <RLOAD>E</RLOAD>
     <UCCHECK>X</UCCHECK>
    </PROGDIR>
    <TPOOL>
     <item>
      <ID>R</ID>
-     <ENTRY>PBO</ENTRY>
-     <LENGTH>3</LENGTH>
+     <ENTRY>Include ZMP_EMP_LOGALI_TOP</ENTRY>
+     <LENGTH>26</LENGTH>
     </item>
    </TPOOL>
   </asx:values>

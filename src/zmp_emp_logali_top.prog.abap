@@ -1,14 +1,12 @@
 *&---------------------------------------------------------------------*
-*& Include YMP_EMP_LOGALI_TOP                       - Module Pool      YMP_EMP_LOGALI
+*& Include ZMP_EMP_LOGALI_TOP                       - Module Pool      ZMP_EMP_LOGALI
 *&---------------------------------------------------------------------*
-
-"Include TOP
-PROGRAM ymp_emp_logali.
+PROGRAM ZMP_EMP_LOGALI.
 
 DATA gv_ok_code TYPE syucomm.
 
-"Customer cointainer
-DATA go_customer_cointainer TYPE REF TO cl_gui_custom_container.
+"Custom container
+DATA go_custom_container TYPE REF TO cl_gui_custom_container.
 
 "ALV Grid
 DATA go_alv_empl_data TYPE REF TO cl_gui_alv_grid.

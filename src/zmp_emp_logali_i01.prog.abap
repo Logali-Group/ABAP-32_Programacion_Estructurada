@@ -1,5 +1,5 @@
 *&---------------------------------------------------------------------*
-*& Include ymp_emp_logali_i01
+*& Include zmp_emp_logali_i01
 *&---------------------------------------------------------------------*
 *&---------------------------------------------------------------------*
 *&      Module  USER_COMMAND_2000  INPUT
@@ -8,14 +8,12 @@
 *----------------------------------------------------------------------*
 MODULE user_command_2000 INPUT.
 
-    gv_ok_code = sy-ucomm.
+  gv_ok_code = sy-ucomm.
 
-    CASE gv_ok_code.
-
-      WHEN 'BACK'.
-
-      LEAVE TO SCREEN 0. "aqui se tambien se puede poner si queremos volver a cierta pantalla, se indica LEAVE TO SCREEN y el numero de la pantalla
-
-    ENDCASE.
+  CASE gv_ok_code.
+    WHEN 'BACK'.
+      LEAVE TO SCREEN 0.
+*     LEAVE PROGRAM.
+  ENDCASE.
 
 ENDMODULE.

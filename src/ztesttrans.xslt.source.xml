@@ -1,0 +1,31 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:ddic="http://www.sap.com/abapxml/types/dictionary" xmlns:def="http://www.sap.com/abapxml/types/defined">
+  <tt:root name="DATA" type="ddic:ZTT_RECEPTDATA"/>
+  <tt:template>
+    <DATA>
+      <tt:loop ref=".DATA">
+        <ReceptorData>
+          <BusinessName tt:value-ref="BUSINESSNAME"/>
+          <Street tt:value-ref="STREET"/>
+          <PostCode tt:value-ref="POSTCODE"/>
+          <Country tt:value-ref="COUNTRY"/>
+          <Department tt:value-ref="DEPARTMENT"/>
+          <ContractData>
+            <tt:loop ref="CONTRACTDATA">
+              <Office>
+                <CentreCode tt:value-ref="CENTRECODE"/>
+                <CentreDescription tt:value-ref="CENTREDESCRIPTION"/>
+                <Name tt:value-ref="NAME"/>
+                <Address tt:value-ref="ADDRESS"/>
+                <ZIP tt:value-ref="ZIP"/>
+                <Town tt:value-ref="TOWN"/>
+                <Email tt:value-ref="EMAIL"/>
+                <Telephone tt:value-ref="TELEPHONE"/>
+              </Office>
+            </tt:loop>
+          </ContractData>
+        </ReceptorData>
+      </tt:loop>
+    </DATA>
+  </tt:template>
+</tt:transform>

@@ -1,11 +1,11 @@
-CLASS z_class_logali DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class Z_CLASS_LOGALI definition
+  public
+  final
+  create public .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
